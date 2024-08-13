@@ -7,7 +7,7 @@
     <!--
         primary meta tags
     -->
-    <title>Become a Mentor</title>
+    <title>Contact Us</title>
     <meta name="title" content="Minjin C.">
     <meta name="description" content="This is an education service website">
 
@@ -39,28 +39,57 @@
         <!--
             HERO
         -->
+
         <section class="section hero has-bg-image" aria-labelledby="hero-lablel" style="background-image: url(./assets/images/hero-bg.png)">
             <div class="container">
 
                 <div class="hero-content">
 
                     <h1 class="headline-lg" id="hero-lablel">
-                        Want to become a mentor?
+                        Have a question? Send us a message.
                     </h1>
 
                     <p class="title-md has-before">
-                        Join our team of enthusiastic teen leaders. It's easy - just click the button below!
+                        Fill out the contact form below to get in contact with us and we will respond as soon as we can!
                     </p>
 
                     <div class="bn-group">
-                        <a href="https://forms.gle/b9Lk3rWavLJ32Gzv7" target="_blank"><button class="btn btn-primary">Register as a Volunteer</button></a>
+                        <a href="#fname" class="btn btn-primary">Fill out Form ↓</a>
+
                     </div>
 
                 </div>
 
                 <figure class="hero-banner">
-                    <img src="/assets/images/register-banner.png" alt="590" height="620" alt="hero banner" class="w-100">
+                    <img src="./assets/images/hero-banner.png" alt="590" height="620" alt="hero banner" class="w-100">
                 </figure>
+            </div>
+        </section>
+
+        <!--
+            FORM
+        -->
+        <section class="section contact" aria-labelledby="about-label">
+            <div class="container">
+
+                <form action="send_email.php" method="post">
+
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter name">
+
+                    <label for="fname">Email Address</label>
+                    <input type="text" id="email" name="firstname" placeholder="Enter email address">
+                
+                    <label for="subject">Subject</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter subject">
+                
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Enter message" style="height:200px"></textarea>
+                
+                    <input type="submit" value="Submit" class="btn-secondary">
+                
+                  </form>
+
             </div>
         </section>
 
@@ -124,6 +153,10 @@
 
                 <li>
                     <a href="become.html" class="title-sm footer-link">Volunteer</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="title-sm footer-link">Contact Us</a>
                 </li>
 
                 <li>
@@ -209,7 +242,7 @@
     <header class="header" data-header>
         <div class="container">
 
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <img src="./assets/images/longlogo.png" width="290" height="54" alt="logo">
             </a>
 
@@ -236,11 +269,15 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a href="courses.html" class="navbar-link title-sm" data-nav-link>Lessons</a>
+                        <a href="blog.html" class="navbar-link title-sm" data-nav-link>Blog</a>
                     </li>
 
                     <li class="navbar-item">
                         <a href="become.html" class="navbar-link title-sm" data-nav-link>Volunteer</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="contact.html" class="navbar-link title-sm" data-nav-link>Contact Us</a>
                     </li>
 
                 </ul>
